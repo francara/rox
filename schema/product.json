@@ -1,0 +1,153 @@
+{
+	"StorageDescriptor": {
+		"cols": {
+			"FieldSchema": [
+				{
+					"name": "productid",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "name",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "productnumber",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "makeflag",
+					"type": "tinyint",
+					"comment": ""
+				},
+				{
+					"name": "finishedgoodsflag",
+					"type": "tinyint",
+					"comment": ""
+				},
+				{
+					"name": "color",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "safetystocklevel",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "reorderpoint",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "standardcost",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "listprice",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "size",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "sizeunitmeasurecode",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "weightunitmeasurecode",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "weight",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "daystomanufacture",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "productline",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "class",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "style",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "productsubcategoryid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "productmodelid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "sellstartdate",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "sellenddate",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "discontinueddate",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "rowguid",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "modifieddate",
+					"type": "string",
+					"comment": ""
+				}
+			]
+		},
+		"location": "s3://francara-rox/product/",
+		"inputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+		"outputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+		"compressed": "false",
+		"numBuckets": "0",
+		"SerDeInfo": {
+			"name": "",
+			"serializationLib": "org.apache.hadoop.hive.serde2.OpenCSVSerde",
+			"parameters": {
+				"separatorChar": ";"
+			}
+		},
+		"bucketCols": [],
+		"sortCols": [],
+		"parameters": {},
+		"SkewedInfo": {},
+		"storedAsSubDirectories": "false"
+	},
+	"parameters": {
+		"classification": "csv"
+	}
+}

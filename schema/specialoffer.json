@@ -1,0 +1,48 @@
+{
+	"StorageDescriptor": {
+		"cols": {
+			"FieldSchema": [
+				{
+					"name": "specialofferid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "productid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "rowguid",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "modifieddate",
+					"type": "string",
+					"comment": ""
+				}
+			]
+		},
+		"location": "s3://francara-rox/sales/offer/",
+		"inputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+		"outputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+		"compressed": "false",
+		"numBuckets": "0",
+		"SerDeInfo": {
+			"name": "",
+			"serializationLib": "org.apache.hadoop.hive.serde2.OpenCSVSerde",
+			"parameters": {
+				"separatorChar": ";"
+			}
+		},
+		"bucketCols": [],
+		"sortCols": [],
+		"parameters": {},
+		"SkewedInfo": {},
+		"storedAsSubDirectories": "false"
+	},
+	"parameters": {
+		"classification": "csv"
+	}
+}

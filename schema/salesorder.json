@@ -1,0 +1,158 @@
+{
+	"StorageDescriptor": {
+		"cols": {
+			"FieldSchema": [
+				{
+					"name": "salesorderid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "revisionnumber",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "orderdate",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "duedate",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "shipdate",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "status",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "onlineorderflag",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "salesordernumber",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "purchaseordernumber",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "accountnumber",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "customerid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "salespersonid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "territoryid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "billtoaddressid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "shiptoaddressid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "shipmethodid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "creditcardid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "creditcardapprovalcode",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "currencyrateid",
+					"type": "int",
+					"comment": ""
+				},
+				{
+					"name": "subtotal",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "taxamt",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "freight",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "totaldue",
+					"type": "double",
+					"comment": ""
+				},
+				{
+					"name": "comment",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "rowguid",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "modifieddate",
+					"type": "string",
+					"comment": ""
+				}
+			]
+		},
+		"location": "s3://francara-rox/sales/order/",
+		"inputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+		"outputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+		"compressed": "false",
+		"numBuckets": "0",
+		"SerDeInfo": {
+			"name": "",
+			"serializationLib": "org.apache.hadoop.hive.serde2.OpenCSVSerde",
+			"parameters": {
+				"separatorChar": ";"
+			}
+		},
+		"bucketCols": [],
+		"sortCols": [],
+		"parameters": {},
+		"SkewedInfo": {},
+		"storedAsSubDirectories": "false"
+	},
+	"parameters": {
+		"classification": "csv"
+	}
+}

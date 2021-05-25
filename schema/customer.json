@@ -1,0 +1,63 @@
+{
+	"StorageDescriptor": {
+		"cols": {
+			"FieldSchema": [
+				{
+					"name": "customerid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "personid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "storeid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "territoryid",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "accountnumber",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "rowguid",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "modifieddate",
+					"type": "string",
+					"comment": ""
+				}
+			]
+		},
+		"location": "s3://francara-rox/customer/",
+		"inputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+		"outputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+		"compressed": "false",
+		"numBuckets": "0",
+		"SerDeInfo": {
+			"name": "",
+			"serializationLib": "org.apache.hadoop.hive.serde2.OpenCSVSerde",
+			"parameters": {
+				"separatorChar": ";"
+			}
+		},
+		"bucketCols": [],
+		"sortCols": [],
+		"parameters": {},
+		"SkewedInfo": {},
+		"storedAsSubDirectories": "false"
+	},
+	"parameters": {
+		"classification": "csv"
+	}
+}
